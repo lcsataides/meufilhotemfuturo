@@ -9,9 +9,10 @@ body {
 }
 
 .logo-main {
-  max-width: 25%;
+  padding: 2rem;
   transform: scale(0.9);
   transition: all 0.2s ease-in-out;
+  max-width: 350px;
 
   &:hover,
   &:focus {
