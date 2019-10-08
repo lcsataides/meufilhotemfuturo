@@ -1,0 +1,34 @@
+{
+  "name": "meufilhotemfuturo",
+  "version": "1.0.0",
+  "description": "Blog Educativo sobre reforço escolar, estratégias de ensino e futuro da educação! #xp26",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "clean": "rm -rf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcsataides/meufilhotemfuturo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lcsataides/meufilhotemfuturo/issues"
+  },
+  "homepage": "https://github.com/lcsataides/meufilhotemfuturo#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.15.0"
+  }
+}
