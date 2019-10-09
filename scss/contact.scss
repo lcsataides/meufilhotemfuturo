@@ -1,0 +1,29 @@
+.contact-content {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.canais-oficiais {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .contact-link,
+  .social-link {
+    width: 100%;
+    // color: $gray;
+    margin-bottom: 1rem;
+
+    .fa,
+    .fab {
+      margin-right: 2rem;
+      font-size: 2rem;
+    }
+
+    .contact-name,
+    .social-name {
+      $color: gray;
+    }
+  }
+}
