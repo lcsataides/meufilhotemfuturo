@@ -1,9 +1,13 @@
 .mftf-footer {
-  min-height: 12rem;
+  min-height: 6rem;
   background-color: $gray;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.mftf-logo {
+  margin-bottom: 1.5rem;
 }
 
 .mftf-end {
@@ -16,7 +20,11 @@
 .mftf-contact {
   display: flex;
   flex-direction: column;
-  color: $white;
+  color: $gray-l;
+}
+
+.mftf-social {
+  color: $gray-l;
 }
 
 .footer-copyright {

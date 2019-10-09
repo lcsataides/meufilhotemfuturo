@@ -143,39 +143,37 @@
     <div class="container">
       <div class="row">
 
-        <div class="cta-wrapper">
-          <div class="cta-content">
+          <div class="cta-content col-md-6">
             <h5 class="cta-title_support">Investir em educação é garantir o futuro!</h5>
             <h2 class=cta-title>Cadastre-se e tenha acesso a conteúdos exclusivos!</h2>
           </div> <!-- end cta-content -->
 
-          <div class="cta-form">
+          <div id="form-cta" class="cta-form col-md-4">
             <form class="cta-inline" name="cta-inline" method="POST" data-netlify="true">
-              <div class="label-group">
                 <label class="d-none">Don’t fill this out if you're human:
                   <input name="bot-field" />
                 </label>
 
-                <div class="name-group">
-                  <label for="name">Qual o seu nome?</label>
-                  <input type="text" name="name" />
-
-                  <label for="surname">E o seu sobrenome?</label>
-                  <input type="text" name="surname" />
-                </div> <!-- end name-group -->
-
-                <div class="mail-group">
-                  <label for="email">E qual seu e-mail?:</label>
-                  <input placeholder="seunome@seuprovedor.com.br" type="email" name="email" />
+                <div class="form-group">
+                  <label class="form-label" for="name">Qual o seu nome?</label>
+                  <input class="form-input" placeholder="Seu sobrenome. Ex: Fulanx" type="text" name="name" />
                 </div>
-              </div> <!-- end label-group -->
+
+                <div class="form-group">
+                  <label class="form-label" for="surname">E o seu sobrenome?</label>
+                  <input class="form-input" placeholder="Seu sobrenome. Ex: Silva" type="text" name="surname" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label form-mail" for="email">E qual seu e-mail?:</label>
+                  <input class="form-input input-mail" placeholder="fulanx@seuprovedor.com.br" type="email" name="email" />
+                </div>
 
               <button class="mftf-cta mftf-orange" type="submit">Quero receber as dicas</button>
             </form>
           </div> <!-- end cta form -->
-        </div> <!-- end cta-wrapper -->
 
-      </div> <!-- end row -->
+      </div>
     </div> <!-- end container -->
   </section> <!-- end cta-banner -->
 

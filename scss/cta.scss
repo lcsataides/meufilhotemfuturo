@@ -1,6 +1,10 @@
 .cta-banner {
-  background-color: $main;
-  padding: 2rem 0 3rem;
+  background-image: url('/assets/img/cta/bg-img_concentrada.jpg');
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-color: $main-d;
+  padding: 3rem 0;
   color: $white;
 }
 
@@ -9,30 +13,44 @@
   flex-direction: column;
 }
 
-.cta-title_support {
-  color: $main-l;
-}
+.cta-content {
+  display: flex;
+  flex-direction: column;
 
-.cta-title {
-  color: $gray-l;
-}
-
-.cta-form {
-
-  // .name-group {
-  //   @extend .cta-inline;
-  // }
-
-  .label-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .cta-title_support {
+    color: $main-l;
   }
 
-  input {
-    min-height: 3rem;
+  .cta-title {
+    color: $gray-l;
+  }
+}
+
+.cta-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-label {
+    margin-bottom: 0;
+    width: 100%;
+    color: $white;
+  }
+
+  .form-group {
+    margin-bottom: .5rem;
+
+    :last-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    max-height: 3rem;
     padding: .5rem;
-    border: 2px solid $main-d;
+    border: 2px solid $main;
+    border-radius: .25rem;
     transition: all .2s ease-in-out;
 
     &:active,
@@ -41,7 +59,19 @@
     }
 
     &::placeholder {
+      font-size: .75rem;
       color: $gray;
     }
   }
+
+  .input-mail {
+    width: 100%;
+  }
+
+  // .form-name {
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 }
