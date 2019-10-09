@@ -1,0 +1,47 @@
+.cta-banner {
+  background-color: $main;
+  padding: 2rem 0 3rem;
+  color: $white;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-title_support {
+  color: $main-l;
+}
+
+.cta-title {
+  color: $gray-l;
+}
+
+.cta-form {
+
+  // .name-group {
+  //   @extend .cta-inline;
+  // }
+
+  .label-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    min-height: 3rem;
+    padding: .5rem;
+    border: 2px solid $main-d;
+    transition: all .2s ease-in-out;
+
+    &:active,
+    &:focus {
+      border-color: $main-d;
+    }
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+}

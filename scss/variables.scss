@@ -1,0 +1,13 @@
+@mixin cta-color($color, $secondary-color, $t-color) {
+  background-color: $color;
+  border: 1px solid $color;
+  box-shadow: 0px 3px 6px $color;
+  color: $t-color;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    box-shadow: 0px 1px 3px $color;
+  }
+}

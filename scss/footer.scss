@@ -1,0 +1,40 @@
+.mftf-footer {
+  min-height: 12rem;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mftf-end {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mftf-contact {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding: .5rem 2rem;
+  background-color: $gray-d;
+  color: $gray-l;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .mftf-end {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+}

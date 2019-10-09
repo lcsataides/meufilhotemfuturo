@@ -1,0 +1,46 @@
+.navbar {
+  background-color: $gray-d;
+
+  .mftf-cta {
+    margin-right: 0;
+  }
+
+  .row {
+    width: 100%;
+  }
+}
+
+.navbar-collapse {
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-collapse.collapse.show {
+  margin: 4rem 0 2rem;
+
+  .mftf-cta {
+    margin: 2rem 0 0 0;
+  }
+}
+
+.navbar-brand {
+  img {
+    max-width: 7rem;
+    margin-bottom: -1.5rem;
+  }
+}
+
+a.navbar-brand  {
+  &:after {
+    display: none;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  .navbar-brand {
+    img {
+      max-width: 9rem;
+    }
+  }
+}

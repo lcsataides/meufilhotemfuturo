@@ -1,0 +1,43 @@
+a {
+  // font-family: $heading;
+  color: $accent;
+  transition: all 0.3s ease-in;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: .125rem;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-d;
+
+    &:after {
+      background-color: $accent-d;
+    }
+  }
+}
+
+.mftf-cta {
+  min-height: 2.5rem;
+  padding: 0 1.5rem;
+  border: 1px solid transparent;
+  font-weight: 700;
+  margin: 0 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: .25rem;
+}
+
+.mftf-orange {
+  @include cta-color($accent,$accent-d, $gray-d);
+}
+
+.mftf-blue {
+  @include cta-color($main,$main-d, $white);
+}
