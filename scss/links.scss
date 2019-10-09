@@ -1,26 +1,11 @@
 a {
-  // font-family: $heading;
   color: $accent;
   transition: all 0.3s ease-in;
 
-  &:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: .125rem;
-    position: relative;
-    background-color: transparent;
-    z-index: 1;
-    transition: all 0.3s ease-in;
-  }
-
   &:hover,
   &:focus {
+    text-decoration: none;
     color: $accent-d;
-
-    &:after {
-      background-color: $accent-d;
-    }
   }
 }
 

@@ -7,7 +7,7 @@ $main-l: #A7D5FF;
 // Laranja de highlight e variações
 
 $accent: #FF8008;
-$accent-d: #E27610;
+$accent-d: darken($accent, 10);
 $accent-l: lighter($accent, 20);
 
 // Cinzas diversos
