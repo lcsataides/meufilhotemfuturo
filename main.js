@@ -8,7 +8,7 @@ export default () => {
 
   function pegarInfo() {
 
-    var currentDate = new Date()
+    var currentDate = new Date();
 
 		var day = currentDate.getDay();
 		var month = currentDate.getMonth();
@@ -17,10 +17,13 @@ export default () => {
     var minutes = currentDate.getMinutes();
     var seconds = currentDate.getSeconds();
 
-    var date = new Date(2016, 6, 27, 13, 30, 0);
+    // função para deixar tudo com 2 dígitos
+    function pad(n) {
+      return n<10 ? '0'+n : n;
+    }
 
-    var data = year + "-" +(month + 1) + "-" + day;
-    var horario = hours + ":" + minutes + ":" + seconds;
+    var data = year + "-" + pad((month + 1)) + "-" + pad(day);
+    var horario = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
     var dateString = data + " " + horario;
     document.querySelector(".date-hidden").value = dateString;
     console.log(dateString);

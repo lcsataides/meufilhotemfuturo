@@ -156,10 +156,7 @@
           </div> <!-- end cta-content -->
 
           <div id="form-cta" class="cta-form col-md-5">
-            <form class="cta-inline" name="cta-inline" method="POST" data-netlify="true">
-                <label class="d-none">Don’t fill this out if you're human:
-                  <input name="bot-field" />
-                </label>
+            <form class="cta-inline" name="cta-inline-home" method="POST" data-netlify="true">
                 <div class="form-group">
                   <label class="form-label" for="name">Qual o seu nome?</label>
                   <input class="form-input" placeholder="Seu sobrenome. Ex: Fulanx" type="text" name="name" />
@@ -176,14 +173,14 @@
                 </div>
 
 
-                <div class="form-group">
+                <div class="form-group d-none">
                   <label class="form-label" for="date">Data do Formulário</label>
-                  <input class="date-hidden form-input" type="text"  name="date">
+                  <input class="date-hidden form-input" type="text"  name="data_hora">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group d-none">
                   <label class="form-label" for="ipadress">Endereço de IP</label>
-                  <input class="ip-hidden form-input" type="text"  name="ipadress">
+                  <input class="ip-hidden form-input" type="text"  name="ip">
                 </div>
 
               <button class="mftf-cta mftf-orange" type="submit">Quero receber as dicas</button>
@@ -223,7 +220,6 @@
     <p class="small">Todos os Direitos Reservados © Team Beta, 2019</p>
   </footer>
 
-  <script src="./blog.js"></script>
-  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
