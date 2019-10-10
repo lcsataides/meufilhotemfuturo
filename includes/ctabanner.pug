@@ -1,0 +1,25 @@
+section.cta-banner
+  .container
+    .row
+      .cta-content.col-md-6
+        h5.cta-title_support Investir em educa&ccedil;&atilde;o &eacute; garantir o futuro!
+        h2.cta-title Cadastre-se e tenha acesso a conte&uacute;dos exclusivos!
+      // end cta-content
+      #form-cta.cta-form.col-md-4
+        form.cta-inline(name='cta-inline' method='POST' data-netlify='true')
+          label.d-none
+            | Don&rsquo;t fill this out if you&apos;re human:
+            input(name='bot-field')
+          .form-group
+            label.form-label(for='name') Qual o seu nome?
+            input.form-input(placeholder='Seu sobrenome. Ex: Fulanx' type='text' name='name')
+          .form-group
+            label.form-label(for='surname') E o seu sobrenome?
+            input.form-input(placeholder='Seu sobrenome. Ex: Silva' type='text' name='surname')
+          .form-group
+            label.form-label.form-mail(for='email') E qual seu e-mail?:
+            input.form-input.input-mail(placeholder='fulanx@seuprovedor.com.br' type='email' name='email')
+          button.mftf-cta.mftf-orange(type='submit') Quero receber as dicas
+      // end cta form
+  // end container
+// end cta-banner
