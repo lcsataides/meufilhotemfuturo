@@ -1,11 +1,4 @@
-import 'bootstrap'
-// import './formInfo'
-import '@fortawesome/fontawesome-free/css/all.css'
-import './main.scss';
-
-export default () => {
-
-  function pegarInfo() {
+	function pegarInfo() {
 
 		var currentDate = new Date();
 		var date = currentDate.getDate();
@@ -16,12 +9,9 @@ export default () => {
 		var dateString = date + "-" +(month + 1) + "-" + year;
 
 		ip = geoplugin_request();
-		document.querySelector(".date-hidden").value = dateString;
-    document.querySelector(".ip-hidden").value = ip;
+		document.querySelector("agoraVaiData")[0].innerText = dateString;
+    document.querySelector("agoraVaiIP")[0].innerText = ip;
 
     console.log(dateString);
     console.log(ip);
-  }
-
-  pegarInfo();
-};
+	}
