@@ -10,10 +10,12 @@
 @import 'scss/typography';
 @import 'scss/links';
 
-// Estrutura
-@import 'scss/nav';
-@import 'scss/hero';
-@import 'scss/cta';
-@import 'scss/post';
-@import 'scss/footer';
+// Estrutura & Páginas
+@import 'scss/about';
 @import 'scss/contact';
+@import 'scss/cta';
+@import 'scss/footer';
+@import 'scss/hero';
+@import 'scss/inside';
+@import 'scss/nav';
+@import 'scss/post';
