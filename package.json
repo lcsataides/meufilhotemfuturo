@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel pages/index.html --public-url /",
-    "build": "parcel build pages/index.html --public-url /",
+    "dev": "parcel pages/*.html --public-url /",
+    "build": "parcel build pages/*.html --public-url /",
     "clean": "rm -rf dist/*"
   },
   "repository": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/lcsataides/meufilhotemfuturo#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "parcel": "^2.0.0-alpha.1.1",
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
     "sass": "^1.23.0"
