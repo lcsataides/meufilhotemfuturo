@@ -7,24 +7,29 @@ export default () => {
 
   function pegarInfo() {
 
-		var currentDate = new Date();
-		var date = currentDate.getDate();
-		var month = currentDate.getMonth(); //Be careful! January is 0 not 1
+    var currentDate = new Date()
+
+		var day = currentDate.getDay();
+		var month = currentDate.getMonth();
     var year = currentDate.getFullYear();
     var hours = currentDate.getHours();
     var minutes = currentDate.getMinutes();
     var seconds = currentDate.getSeconds();
 
-    var ip = "";
-		var dateString = date + "-" +(month + 1) + "-" + year + " " + hours + ":" + minutes + ":" + seconds;
+    var date = new Date(2016, 6, 27, 13, 30, 0);
 
-		ip = geoplugin_request();
-		document.querySelector(".date-hidden").value = dateString;
-    document.querySelector(".ip-hidden").value = ip;
+    // var ip = "";
+    var data = year + "-" +(month + 1) + "-" + day;
+    var horario = hours + ":" + minutes + ":" + seconds;
+		var dateString = data + " " + horario;
+
+		// ip = geoplugin_request();
+		document.querySelector(".date-hidden").value = date;
+    // document.querySelector(".ip-hidden").value = ip;
 
     console.log(currentDate);
     console.log(dateString);
-    console.log(ip);
+    // console.log(ip);
   }
 
   pegarInfo();
