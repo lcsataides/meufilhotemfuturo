@@ -10,6 +10,16 @@
   }
 }
 
+.navbar-toggler {
+  color: $accent;
+  font-size: 2rem;
+  transition: all 2s ease-in;
+
+  &:hover {
+    color: $accent-d;
+  }
+}
+
 .navbar-collapse {
   text-align: center;
   transition: all .3s ease-in-out;
