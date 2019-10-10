@@ -1,6 +1,7 @@
-import 'bootstrap'
+import 'bootstrap';
 // import './formInfo'
-import '@fortawesome/fontawesome-free/css/all.css'
+import "./import-jquery";
+import '@fortawesome/fontawesome-free/css/all.css';
 import './main.scss';
 
 export default () => {
@@ -18,18 +19,18 @@ export default () => {
 
     var date = new Date(2016, 6, 27, 13, 30, 0);
 
-    // var ip = "";
     var data = year + "-" +(month + 1) + "-" + day;
     var horario = hours + ":" + minutes + ":" + seconds;
-		var dateString = data + " " + horario;
-
-		// ip = geoplugin_request();
-		document.querySelector(".date-hidden").value = date;
-    // document.querySelector(".ip-hidden").value = ip;
-
-    console.log(currentDate);
+    var dateString = data + " " + horario;
+    document.querySelector(".date-hidden").value = dateString;
     console.log(dateString);
-    // console.log(ip);
+
+
+    $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+      var ip = data.ip;
+      document.querySelector(".ip-hidden").value = ip
+      console.log(ip);
+    });
   }
 
   pegarInfo();
