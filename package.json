@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel pages/*.html --public-url /",
-    "build": "parcel build pages/*.html --public-url /",
+    "dev": "parcel *.html --public-url /",
+    "build": "parcel build *.html --public-url /",
     "clean": "rm -rf dist/*"
   },
   "repository": {
