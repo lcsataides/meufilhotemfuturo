@@ -1,18 +1,20 @@
 nav.navbar.navbar-expand-lg
   .container
     .row
-      a.navbar-brand(href='index.pug')
+      a.navbar-brand(href='./index.pug')
         img(src='assets/img/meufilhotemfuturo-brand.png' alt='Meu Filho tem Futuro')
       button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarMenu.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item.active
-            a.nav-link(href='quemsomos.pug')
+            a.nav-link(href='./quemsomos.html')
+            a.nav-link(href='./quemsomos.pug')
+            a.nav-link(href='../pages/quemsomos.html')
               | Quem Somos
               span.sr-only (current)
           li.nav-item
-            a.nav-link(href='contato.pug') Contato
+            a.nav-link(href='./contato.html') Contato
           li.nav-item
             button.mftf-cta.mftf-orange Quero Mais Futuro
       // end collapse navbar-collapse
