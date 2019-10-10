@@ -6,6 +6,7 @@
 
   &:hover,
   &:focus {
+    color: $t-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
     box-shadow: 0px 1px 3px $color;
