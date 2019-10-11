@@ -1,13 +1,13 @@
+@import 'scss/type';
 @import "~bootstrap/scss/bootstrap";
 
 // Variáveis
 @import 'scss/colors';
-@import 'scss/variables';
+@import 'scss/mixins';
 @import 'scss/spacing';
 @import 'scss/overrides';
 
 // Componentes
-@import 'scss/typography';
 @import 'scss/links';
 
 // Estrutura & Páginas
