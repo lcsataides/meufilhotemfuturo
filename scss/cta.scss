@@ -1,7 +1,7 @@
 .floating-box {
   width: 100%;
   margin: 0rem 1.5rem -3rem;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   border-radius: .5rem;
   background-color: $accent;
   display: flex;
@@ -22,7 +22,6 @@
   .float-title {
     margin-bottom: 0;
     text-align: left;
-    max-width: 25rem;
   }
 }
 

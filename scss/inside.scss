@@ -1,9 +1,26 @@
 .content-inside {
-  max-width: 40rem;
   margin: 0 auto;
+  max-width: 40rem;
   padding: 8rem 0 4rem;
+}
+
+.inside-img {
+  width: 100%;
+  margin: 1rem auto;
 }
 
 .post-1-mftf {
   background-image: url('assets/posts/img-post__blended-learning.jpg');
+}
+.post-2-mftf {
+  background-image: url('assets/posts/img-post__matematica.jpg');
+}
+.post-3-mftf {
+  background-image: url('assets/posts/img-post__culturamaker.jpg');
+}
+.post-4-mftf {
+  background-image: url('assets/posts/img-post__novas-tecnologias.jpg');
+}
+.post-5-mftf {
+  background-image: url('assets/posts/img-post__mundodigital.jpg');
 }
